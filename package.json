@@ -1,16 +1,14 @@
 {
   "name": "layer0-dojo-example",
   "scripts": {
-    "layer0:dev": "layer0 dev",
-    "layer0:build": "layer0 build",
-    "layer0:deploy": "layer0 deploy",
     "dev": "dojo build --mode dev --watch --serve",
     "build": "dojo build --mode dist",
     "build:dev": "dojo build --mode dev",
-    "test": "dojo test",
-    "test:unit": "dojo build --mode unit && dojo test --unit --config local",
-    "test:functional": "dojo build --mode functional && dojo test --functional --config local",
-    "test:all": "dojo build --mode unit && dojo build --mode functional && dojo test --all --config local"
+    "layer0:dev": "layer0 dev",
+    "layer0:build": "layer0 build",
+    "layer0:deploy": "layer0 deploy",
+    "layer0:production": "layer0 run --production",
+    "format": "prettier --write '**/*' --ignore-unknown"
   },
   "dependencies": {
     "@dojo/framework": "~8.0.0",
@@ -22,12 +20,12 @@
   "devDependencies": {
     "@dojo/cli": "~8.0.0",
     "@dojo/cli-build-app": "~8.0.0",
-    "@dojo/cli-test-intern": "~8.0.0",
-    "@layer0/cli": "^4.13.9",
-    "@layer0/core": "^4.13.9",
-    "@layer0/devtools": "^4.13.9",
-    "@layer0/prefetch": "^4.13.9",
+    "@layer0/cli": "^4.18.1",
+    "@layer0/core": "^4.18.1",
+    "@layer0/devtools": "^4.18.1",
+    "@layer0/prefetch": "^4.18.1",
     "@types/node": "~9.6.5",
+    "prettier": "^2.7.1",
     "typescript": "~3.5.3"
   }
 }
