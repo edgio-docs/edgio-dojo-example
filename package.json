@@ -1,13 +1,13 @@
 {
-  "name": "layer0-dojo-example",
+  "name": "edgio-dojo-example",
   "scripts": {
     "dev": "dojo build --mode dev --watch --serve",
     "build": "dojo build --mode dist",
     "build:dev": "dojo build --mode dev",
-    "layer0:dev": "layer0 dev",
-    "layer0:build": "layer0 build",
-    "layer0:deploy": "layer0 deploy",
-    "layer0:production": "layer0 run --production",
+    "edgio:dev": "edgio dev",
+    "edgio:build": "edgio build",
+    "edgio:deploy": "edgio deploy",
+    "edgio:production": "edgio run --production",
     "format": "prettier --write '**/*' --ignore-unknown"
   },
   "dependencies": {
@@ -20,10 +20,10 @@
   "devDependencies": {
     "@dojo/cli": "~8.0.0",
     "@dojo/cli-build-app": "~8.0.0",
-    "@layer0/cli": "^4.18.1",
-    "@layer0/core": "^4.18.1",
-    "@layer0/devtools": "^4.18.1",
-    "@layer0/prefetch": "^4.18.1",
+    "@edgio/cli": "^5.0.4",
+    "@edgio/core": "^5.0.4",
+    "@edgio/devtools": "^5.0.4",
+    "@edgio/prefetch": "^5.0.4",
     "@types/node": "~9.6.5",
     "prettier": "^2.7.1",
     "typescript": "~3.5.3"
